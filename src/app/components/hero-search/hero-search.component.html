@@ -1,0 +1,15 @@
+<div id="search-component">
+    <div class="form__group">
+      <input #searchBox id="search-box" class="form__input" type="text" placeholder="Rat name" required="" (input)="search(searchBox.value)" />
+      <label for="name" class="form__label">Rat Names</label>
+    </div>
+    <ul class="search-result">
+      <li *ngFor="let hero of heroes$ | async" >
+        <div class="container">
+          <a  class="name" routerLink="/detail/{{hero.id}}">
+            {{hero.name}}
+          </a>
+        </div>
+      </li>
+    </ul>
+</div>

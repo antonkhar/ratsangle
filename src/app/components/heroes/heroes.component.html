@@ -1,0 +1,21 @@
+<div class="page">
+  <ul class="heroes">
+    <div class="wrap">
+      <li *ngFor="let hero of heroes">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src={{hero.photo}} alt="Rat">
+            <div class="title-flex">
+              <h3 class="box-title">{{hero.name}}</h3>
+            </div>
+            <p class="text">{{hero.shortDesk}}</p>
+          </div>
+          <button routerLink="/detail/{{hero.id}}" class="button">
+            <span class="badge"></span> More
+          </button>
+          <button class="button" title="delete hero" (click)="delete(hero)">delete</button>
+        </div>
+      </li>
+    </div>
+    </ul>
+</div>
