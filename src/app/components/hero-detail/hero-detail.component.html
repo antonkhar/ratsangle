@@ -1,0 +1,18 @@
+<div class="center">
+  <div class="page">
+    <div *ngIf="hero">
+      <h2 class="name text">{{hero.name}} Details</h2>
+      <div class="text">id: {{hero.id}}</div>
+      <div class="form__group">
+        <label for="hero-name" class="text">Rat name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" #searchBox id="search-box" class="form__input" type="text" required="">
+      </div>
+      <div class="description text">Descriprion: <p>{{hero.longDesk}}</p></div>
+  </div>
+  <div class="buttons">
+    <button type="button" class="button" (click)="goBack()">go back</button>
+    <button type="button" class="button" (click)="save()">save</button>
+  </div>
+  <img class="image-radius" src={{hero?.photo}} alt="rat">
+  </div>
+</div>
