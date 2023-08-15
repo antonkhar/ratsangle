@@ -1,0 +1,62 @@
+.page {
+  display: flex;
+  flex-direction: column; /* Добавляем вертикальное выравнивание для дочерних элементов */
+  background-color: #E7DCC8;
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  line-height: 1.3;
+  font-family: 'Preahvihear', sans-serif;
+  margin: auto;
+  padding: 20px; /* Добавляем внутренний отступ для контента */
+  box-sizing: border-box; /* Учитываем внутренний отступ в расчете ширины блока */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list li {
+  flex: 1;
+  margin: 0 15px; /* Уменьшаем отступы между элементами */
+}
+
+a {
+  text-decoration: none;
+  color: #553A59;
+  font-size: 16px;
+  transition: 0.5s;
+  display: block; /* Делаем ссылки блочными элементами, чтобы можно было задать им внутренние отступы */
+  padding: 5px 0; /* Добавляем внутренние отступы для ссылок */
+}
+
+a:hover {
+  font-size: 18px;
+}
+
+@media (max-width: 670px) {
+  a {
+    font-size: 10px;
+    padding: 2px 0;
+  }
+
+  .parent {
+    width: 90%; /* Пример новой ширины для маленьких экранов */
+    margin: auto;
+  }
+  
+  .list li {
+    margin: 0 15px; /* Пример новых отступов для маленьких экранов */
+  }
+  
+}
