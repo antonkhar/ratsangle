@@ -98,7 +98,7 @@ a {
 
 .box-image:hover {
   border-radius: 10%;
-  width: 280px;
+  width: 240px;
 }
 
 .title-flex {
@@ -150,7 +150,8 @@ a {
   color: #553A59;
 }
 /* RESPONSIVE QUERIES */
-@media (max-width: 319px) {
+@media screen and (max-width: 320px) {
+
   .title-flex {
     display: flex;
     flex-direction: column;
@@ -194,7 +195,7 @@ a {
     font-size: 10px;
     background: var(--purple);
     transition: 0.35s background-color;
-    max-height: 10px;
+    // max-height: 10px;
   }
   
 }
