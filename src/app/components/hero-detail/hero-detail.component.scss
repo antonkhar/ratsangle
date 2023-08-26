@@ -77,4 +77,14 @@ p {
 .center {
     margin: auto;
 }
+
+@media screen and (max-width: 440px) {
+    img {
+        max-width: 240px;
+    }
+
+    .form__input {
+        max-width: 100px;
+    }
+}
   
